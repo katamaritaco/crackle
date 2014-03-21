@@ -26,8 +26,8 @@ public class movePlayer : MonoBehaviour {
         CharacterController charController = gameObject.GetComponent<CharacterController>();
         //velocity = new Vector3(Input.GetAxis("Horizontal") * movementSpeed, 0, Input.GetAxis("Vertical") * movementSpeed);
 
-        gameObject.transform.Rotate(0, Input.GetAxis("Mouse X"), 0);
-        Camera.main.transform.Rotate(-Input.GetAxis("Mouse Y"), 0, 0);
+        //gameObject.transform.Rotate(0, Input.GetAxis("Mouse X"), 0);
+        //Camera.main.transform.Rotate(-Input.GetAxis("Mouse Y"), 0, 0);
 
         velocity.x = Input.GetAxis("Horizontal") * movementSpeed;
         velocity.z = Input.GetAxis("Vertical") * movementSpeed;
@@ -45,8 +45,8 @@ public class movePlayer : MonoBehaviour {
 
         velocity = transform.rotation * velocity;
 
-        //gameObject.transform.Rotate(0, Input.GetAxis("Mouse X"), 0);
-        //Camera.main.transform.Rotate(-Input.GetAxis("Mouse Y"), 0, 0);
+        gameObject.transform.Rotate(0, Input.GetAxis("Mouse X"), 0);
+        Camera.main.transform.Rotate(-Input.GetAxis("Mouse Y"), 0, 0);
 
 
 
