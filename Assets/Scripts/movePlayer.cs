@@ -17,10 +17,8 @@ public class movePlayer : MonoBehaviour {
 
     void OnGUI()
     {
-        GUI.Label(new Rect(20.0f, 200.0f, 200.0f, 20.0f), velocity.ToString("F3"));
-        GUI.Label(new Rect(20.0f, 240.0f, 200.0f, 20.0f), transform.position.x.ToString());
-        GUI.Label(new Rect(100.0f, 240.0f, 200.0f, 20.0f), transform.position.y.ToString());
-        GUI.Label(new Rect(180.0f, 240.0f, 200.0f, 20.0f), transform.position.z.ToString());
+        GUI.Label(new Rect(20.0f, 200.0f, 200.0f, 20.0f), gameObject.transform.position.ToString("F3"));
+        GUI.Label(new Rect(20.0f, 240.0f, 200.0f, 20.0f), transform.position.ToString("F3"));
     }
 
 	// Update is called once per frame
